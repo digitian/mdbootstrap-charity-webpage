@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>NGO Website Template by Hüseyin Emeci</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Google Fonts Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+  <!-- MDB -->
+  <link rel="stylesheet" href="css/mdb.min.css" />
+  <!-- Custom Styles -->
+  <style>
+    /* Color of the navbar AFTER scroll and transition after scrolling  */
+    .navbar-after-scroll {
+      background-color: #fff;
+      border-bottom: 1px solid var(--mdb-border-color);
+      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+    }
+
+    /* Transition to the initial state */
+    .navbar-before-scroll {
+      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+    }
+
+    /* An optional height of the navbar AFTER scroll */
+    .navbar.navbar-before-scroll.navbar-after-scroll {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    #navbarButtons>li:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    /* Navbar on mobile */
+    @media (max-width: 991.98px) {
+      #main-navbar {
+        background-color: #fff;
+      }
+
+      .nav-link,
+      .navbar-toggler-icon {
+        color: #4f4f4f !important;
+      }
+    }
+
+    #topScreenSection {
+      background-image: url('https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ');
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Navigation -->
+  <header class="mb-10">
+
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-before-scroll shadow-0">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+
+        <!-- Toggle button -->
+        <button data-mdb-collapse-init class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+          data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+          <a class="navbar-brand me-1" href="#">
+            <!-- <img src="./img/logo.png" height="25px" alt="Logo" loading="lazy" /> -->
+            <h6 class="fw bold h5 text-uppercase">A Charity</h6>
+          </a>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase small" id="navbarButtons">
+
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Donate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!">Contact Us</a>
+            </li>
+
+          </ul>
+
+          <a href="#!" class="btn btn-primary ms-auto" data-mdb-ripple-init>Take Action</a>
+
+        </div>
+        <!-- Collapsible wrapper -->
+
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Section: Top screen -->
+    <section id="topScreenSection">
+      <div class="container-lg">
+        <div class="row gy-3 gx-0 vh-100 align-items-center justify-content-center">
+
+          <!-- First column -->
+          <div class="col-md-8 d-flex align-items-center justify-content-center">
+
+            <div class="bg-white bg-opacity-25 rounded-7 px-5 py-4">
+
+              <h3 class="display-5 text-secondary">Did you know?</h3>
+              <h1 class="fw-bold text-dark display-2 m-0">We have saved 54,523 trees this month!</h1>
+
+            </div>
+
+          </div>
+          <!-- First column -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Section: Top screen -->
+
+  </header>
+  <!-- Main Navigation -->
+
+  <!-- Main Layout -->
+  <main>
+    <div class="container-lg">
+
+      <!-- Section: Latest events -->
+      <section class="mb-10">
+
+        <h3 class="h3 text-dark mb-0">Latest Events</h3>
+        <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, necessitatibus.
+        </p>
+
+        <div class="container">
+
+          <div class="row gx-lg-5">
+
+            <!-- First column -->
+            <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+  
+              <div class="card rounded-6 h-100">
+                <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
+                  data-mdb-ripple-color="light">
+                  <img src="https://picsum.photos/id/188/400/200" class="w-100 object-cover" style="height: 150px;" />
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Plant Tree, Save Lives</h5>
+                  <p class="text-muted">
+                    <small>Took place on <u>13.09.2021</u> in
+                      <a href="" class="text-dark">Amsterdam</a></small>
+                  </p>
+                  <p class="card-text">
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                    placerat vulputate. Ut vulputate est non quam dignissim
+                    elementum. Donec a ullamcorper diam.
+                  </p>
+                  <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>More Details</a>
+                </div>
+              </div>
+  
+            </div>
+            <!-- First column -->
+  
+            <!-- Second column -->
+            <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+  
+              <div class="card rounded-6 h-100">
+                <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
+                  data-mdb-ripple-color="light">
+                  <img src="https://picsum.photos/id/187/400/200" class="w-100 object-cover" style="height: 150px;" />
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Even One Seed Matters</h5>
+                  <p class="text-muted">
+                    <small>Took place on <u>26.08.2021</u> in
+                      <a href="" class="text-dark">Rotterdam</a></small>
+                  </p>
+                  <p class="card-text">
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                    placerat vulputate. Ut vulputate est non quam dignissim
+                    elementum. Donec a ullamcorper diam.
+                  </p>
+                  <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>More Details</a>
+                </div>
+              </div>
+  
+            </div>
+            <!-- Second column -->
+  
+            <!-- Third column -->
+            <div class="col-lg-4 col-md-12 mb-6 mb-lg-0">
+  
+              <div class="card rounded-6 h-100">
+                <div class="mt-n3 bg-image hover-overlay mx-3 shadow-4-strong rounded-6" data-mdb-ripple-init
+                  data-mdb-ripple-color="light">
+                  <img src="https://picsum.photos/id/186/400/200" class="w-100 object-cover" style="height: 150px;" />
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Annual Charity Meeting</h5>
+                  <p class="text-muted">
+                    <small>Took place on <u>02.08.2021</u> in
+                      <a href="" class="text-dark">Maastricht</a></small>
+                  </p>
+                  <p class="card-text">
+                    Ut pretium ultricies dignissim. Sed sit amet mi eget urna
+                    placerat vulputate. Ut vulputate est non quam dignissim
+                    elementum. Donec a ullamcorper diam.
+                  </p>
+                  <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-ripple-init>More Details</a>
+                </div>
+              </div>
+  
+            </div>
+            <!-- Third column -->
+  
+          </div>
+
+        </div>
+
+      </section>
+      <!-- Section: Latest events -->
+
+      <!-- Section: Reviews -->
+      <section class="mb-10">
+
+        <h3 class="h3 text-dark mb-0">Our Heroes Say...</h3>
+        <p class="text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, consequuntur.</p>
+
+        <div class="container">
+
+          <div class="row gx-lg-5 gy-4">
+
+            <!-- First column -->
+            <div class="col-lg-3 col-6 mb-6 mb-lg-0">
+  
+              <div class="d-flex align-items-center">
+  
+                <div class="bg-image hover-overlay rounded-circle" data-mdb-ripple-init data-mdb-ripple-color="light">
+                  <img src="https://randomuser.me/api/portraits/men/8.jpg" alt="" class="object-cover"
+                    style="width: 3rem; height: 3rem;">
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+  
+                <div class="ms-3 lh-1">
+                  <h5 class="fw-bold h5 m-0">Robert Klaus</h5>
+                  <p class="text-muted p-0 m-0">Charity Hero</p>
+                </div>
+  
+              </div>
+  
+              <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas itaque
+                asperiores doloribus delectus quam vitae excepturi in dolorum eos.</p>
+  
+            </div>
+            <!-- First column -->
+  
+            <!-- Second column -->
+            <div class="col-lg-3 col-6 mb-6 mb-lg-0">
+  
+              <div class="d-flex align-items-center">
+  
+                <div class="bg-image hover-overlay rounded-circle" data-mdb-ripple-init data-mdb-ripple-color="light">
+                  <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="" class="object-cover"
+                    style="width: 3rem; height: 3rem;">
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+  
+                <div class="ms-3 lh-1">
+                  <h5 class="fw-bold h5 m-0">Hans Weber</h5>
+                  <p class="text-muted p-0 m-0">Charity Hero</p>
+                </div>
+  
+              </div>
+  
+              <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas itaque
+                asperiores doloribus delectus quam vitae excepturi in dolorum eos.</p>
+  
+            </div>
+            <!-- Second column -->
+  
+            <!-- Third column -->
+            <div class="col-lg-3 col-6 mb-6 mb-lg-0">
+  
+              <div class="d-flex align-items-center">
+  
+                <div class="bg-image hover-overlay rounded-circle" data-mdb-ripple-init data-mdb-ripple-color="light">
+                  <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="" class="object-cover"
+                    style="width: 3rem; height: 3rem;">
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+  
+                <div class="ms-3 lh-1">
+                  <h5 class="fw-bold h5 m-0">Laura Wesley</h5>
+                  <p class="text-muted p-0 m-0">Charity Hero</p>
+                </div>
+  
+              </div>
+  
+              <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas itaque
+                asperiores doloribus delectus quam vitae excepturi in dolorum eos.</p>
+  
+            </div>
+            <!-- Third column -->
+  
+            <!-- Fourth column -->
+            <div class="col-lg-3 col-6 mb-6 mb-lg-0">
+  
+              <div class="d-flex align-items-center">
+  
+                <div class="bg-image hover-overlay rounded-circle" data-mdb-ripple-init data-mdb-ripple-color="light">
+                  <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="" class="object-cover"
+                    style="width: 3rem; height: 3rem;">
+                  <a href="#!" data-mdb-modal-init data-mdb-target="#project-1">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+  
+                <div class="ms-3 lh-1">
+                  <h5 class="fw-bold h5 m-0">Sarah Kolberg</h5>
+                  <p class="text-muted p-0 m-0">Charity Hero</p>
+                </div>
+  
+              </div>
+  
+              <p class="mt-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt voluptas itaque
+                asperiores doloribus delectus quam vitae excepturi in dolorum eos.</p>
+  
+            </div>
+            <!-- Fourth column -->
+  
+  
+          </div>
+
+        </div>
+
+        <div class="d-flex align-items-center mt-3">
+          <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="" class="object-cover rounded-circle img-thumbnail"
+                    style="width: 3rem; height: 3rem;">
+          <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="" class="object-cover rounded-circle img-thumbnail"
+                    style="width: 3rem; height: 3rem; margin-left: -2.2rem;">
+          <img src="https://randomuser.me/api/portraits/women/14.jpg" alt="" class="object-cover rounded-circle img-thumbnail"
+                    style="width: 3rem; height: 3rem; margin-left: -2.2rem;">
+          <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="" class="object-cover rounded-circle img-thumbnail"
+                    style="width: 3rem; height: 3rem; margin-left: -2.2rem;">
+          <span class="text-muted ms-2">...and 6,213 more.</span>
+        </div>
+
+        <a href="#!" class="btn btn-secondary btn-rounded mt-3">Read More Comments</a>
+
+      </section>
+      <!-- Section: Reviews -->
+
+      <!-- Section: photos -->
+      <section class="mb-10">
+
+        <h3 class="h3 text-dark mb-0">Gallery</h3>
+        <p class="text-muted mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, libero!</p>
+
+        <div class="container">
+
+          <div class="row row-cols-3 row-cols-md-6 g-3">
+
+            <!-- First column -->
+            <div class="col">
+              <div class="bg-image hover-overlay shadow-4-strong rounded-7" data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/id/189/200" class="w-100" alt="" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+            <!-- First column -->
+
+            <!-- Second column -->
+            <div class="col">
+              <div class="bg-image hover-overlay shadow-4-strong rounded-7" data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/id/190/200" class="w-100" alt="" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Second column -->
+
+            <!-- Third column -->
+            <div class="col">
+              <div class="bg-image hover-overlay shadow-4-strong rounded-7" data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/id/191/200" class="w-100" alt="" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Third column -->
+
+            <!-- Fourth column -->
+            <div class="col">
+              <div class="bg-image hover-overlay shadow-4-strong rounded-7" data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/id/192/200" class="w-100" alt="" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Fourth column -->
+
+            <!-- Fifth column -->
+            <div class="col">
+              <div class="bg-image hover-overlay shadow-4-strong rounded-7" data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/id/193/200" class="w-100" alt="" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Fifth column -->
+
+            <!-- Sixth column -->
+            <div class="col">
+              <div class="bg-image hover-overlay shadow-4-strong rounded-7" data-mdb-ripple-init
+                data-mdb-ripple-color="light">
+                <img src="https://picsum.photos/id/194/200" class="w-100" alt="" />
+                <a href="#!">
+                  <div class="mask" style="background-color: hsla(0, 0%, 98%, 0.2)"></div>
+                </a>
+              </div>
+            </div>
+            <!-- Sixth column -->
+
+          </div>
+
+        </div>
+
+        <a href="#!" class="btn btn-secondary btn-rounded mt-3">
+          <i class="fas fa-eye me-2"></i>See more photos</a>
+
+      </section>
+      <!-- Section: photos -->
+
+      <!-- Section: Call to action -->
+      <section class="mb-10">
+
+        <h3 class="h2 text-center">What are you waiting for?</h3>
+        <p class="text-muted text-center mb-4">Be a valuable part of our charity and make a difference!</p>
+
+        <div class="container">
+          <div class="row gx-0 align-items-center">
+
+            <!-- First column -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+
+              <div style="background: hsla(0, 0%, 100%, 0.55);
+                    backdrop-filter: blur(10px);
+                    z-index: 1;" class="card rounded-7 me-lg-n5">
+                <div class="card-body p-lg-5 shadow-5">
+                  <form>
+                    <!-- Name input -->
+                    <div class="form-outline mb-4" data-mdb-input-init>
+                      <input type="text" id="form4Example1" class="form-control" />
+                      <label class="form-label" for="form4Example1">Your Full Name</label>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4" data-mdb-input-init>
+                      <input type="email" id="form4Example2" class="form-control" />
+                      <label class="form-label" for="form4Example2">Your Email address</label>
+                    </div>
+
+                    <!-- Message input -->
+                    <div class="form-outline mb-4" data-mdb-input-init>
+                      <input type="tel" id="form4Example3" class="form-control" />
+                      <label class="form-label" for="form4Example3">Your Phone Number</label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex mb-4">
+                      <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                      <label class="form-check-label" for="form4Example4">
+                        I have agreed to <a href="#!">terms</a>.
+                      </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4" data-mdb-ripple-init>Be A Part Of A Clean Future</button>
+                  </form>
+                </div>
+              </div>
+
+            </div>
+            <!-- First column -->
+
+            <!-- Second column -->
+            <div class="col-lg-6 mb-5 mb-lg-0">
+
+              <div class="ratio ratio-1x1">
+                <iframe class="shadow-3-strong rounded-7"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6248.327841746415!2d27.114466090477283!3d38.46077678835616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9ce9964b18f%3A0x541e6243184528c8!2zQmFoYXJpeWUsIEthcsWfxLF5YWthL8Swem1pcg!5e0!3m2!1sen!2str!4v1745939603827!5m2!1sen!2str"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+            </div>
+            <!-- Second column -->
+
+          </div>
+        </div>
+
+      </section>
+      <!-- Section: Call to action -->
+
+    </div>
+  </main>
+  <!-- Main Layout -->
+
+  <!-- Footer -->
+  <footer class="bg-body-tertiary text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media-->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-floating text-white m-1" data-mdb-ripple-init style="background-color: #3b5998;" href="#!" role="button">
+          <i class="fab fa-facebook-f fa-lg"></i>
+        </a>
+
+        <!-- Instagram -->
+        <a class="btn btn-floating text-white m-1" data-mdb-ripple-init style="background-color: #ac2bac;" href="#!" role="button">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+
+        <!-- Twitter -->
+        <a class="btn btn-floating text-white m-1" data-mdb-ripple-init style="background-color: #55acee;" href="#!" role="button">
+          <i class="fab fa-twitter fa-lg"></i>
+        </a>
+
+        <!-- Youtube -->
+        <a class="btn btn-floating text-white m-1" data-mdb-ripple-init style="background-color: #ed302f;" href="#!" role="button">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-floating text-white m-1" data-mdb-ripple-init style="background-color: #0082ca;" href="#!" role="button">
+          <i class="fab fa-linkedin-in fa-lg"></i>
+        </a>
+      </section>
+      <!-- Section: Social media-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2025 Copyright:
+      <a class="text-white" href="#!">A Charity</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+  <!-- MDB -->
+  <script type="text/javascript" src="js/mdb.umd.min.js"></script>
+  <!-- Custom scripts -->
+  <script type="text/javascript">
+
+    const navbar = document.getElementById("main-navbar");
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 0) {
+        navbar.classList.add("navbar-after-scroll");
+      } else {
+        navbar.classList.remove("navbar-after-scroll");
+      }
+    });
+
+  </script>
+</body>
+
+</html>
